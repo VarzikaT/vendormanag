@@ -1,0 +1,20 @@
+
+.loginPage-img{
+
+    /* background-color: cadetblue; */
+    background-image: url(../img/login.jpg);
+
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+.login-heading{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 80px;
+}
