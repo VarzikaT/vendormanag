@@ -1,9 +1,15 @@
 import React from 'react'
+import './Welcome.css';
+import Card from './Card';
 
-const welcome = () => {
+const Welcome = () => {
   return (
-    <div>welcome</div>
+    <div>
+        <div id='card'>
+        <Card/>
+        </div>
+    </div>
   )
 }
 
-export default welcome
+export default Welcome
