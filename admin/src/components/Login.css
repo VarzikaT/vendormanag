@@ -13,8 +13,19 @@
     opacity: 1;
 }
 
+.loginpage-allign{
+padding: 5px;
+}
 .login-heading{
+    padding-left: 10px;
     text-align: center;
     color: whitesmoke;
     padding-top: 80px;
+}
+
+.card{
+    display: flex;
+    padding-top: 10%;
+    /* background-color: aquamarine; */
+    
 }
