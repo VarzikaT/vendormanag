@@ -1,9 +1,7 @@
 
 .loginPage-img{
 
-    /* background-color: cadetblue; */
     background-image: url(../img/login.jpg);
-
     height:100vh;
     width: 100%;
     background-position:center;
@@ -14,7 +12,8 @@
 }
 
 .loginpage-allign{
-padding: 5px;
+    padding: 5px;
+    height : 100%;
 }
 .login-heading{
     padding-left: 10px;
@@ -23,9 +22,7 @@ padding: 5px;
     padding-top: 80px;
 }
 
-.card{
-    display: flex;
+.login-card-container{
     padding-top: 10%;
     /* background-color: aquamarine; */
-    
 }

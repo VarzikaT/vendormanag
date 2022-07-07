@@ -1,90 +1,98 @@
-.card-category-1 {
-  font-family: sans-serif;
-  margin-bottom: 45px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.card-category-1 div {
-  display: inline-block;
-}
-.card-btn {
-  color: whitesmoke;
-  outline: #fff;
-  border-radius: 12px;
-  border-color: #610c63;
-}
-.card-category-1 > div:not(:last-child) {
-  margin: 10px 5px;
-  text-align: left;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-/* Basic Card */
-.basic-card {
-  width: 400px;
-  position: relative;
 
-  -webkit-box-shadow: 0px 5px 5px 0px #711a75;
-  -moz-box-shadow: 0px 5px 5px 0px #711a75;
-  -o-box-shadow: 0px 5px 5px 0px #711a75;
-  box-shadow: 0px 5px 5px 0px #711a75;
-}
-
-.basic-card .card-content {
-  padding: 30px;
-  height: 160px;
-}
-
-.basic-card .card-title {
-  font-size: 25px;
+.data-card {
   font-family: "Open Sans", sans-serif;
-}
-
-.basic-card .card-text {
-  line-height: 1.6;
-}
-
-.basic-card .card-link {
-  padding: 25px;
-  width: -webkit-fill-available;
-}
-
-.basic-card .card-link a {
+  display: flex;
+  flex-direction: column;
+  max-width: 20.75em;
+  min-height: 20.75em;
+  overflow: hidden;
+  border-radius: 0.5em;
   text-decoration: none;
-  position: relative;
-  padding: 10px 0px;
+  background: white;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, 0.1);
+  transition: transform 0.45s ease, background 0.45s ease;
 }
-
-.basic-card .card-link a:after {
-  top: 30px;
-  content: "";
+.data-card .h3-text {
+  color: #2E3C40;
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid #753BBD;
+  transition: color 0.45s ease, border 0.45s ease;
+}
+.data-card .h4-text {
+  opacity: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+.data-card .link-text {
   display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  width: 0;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  color: #753BBD;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+.data-card:hover {
+  background: #753BBD;
+  transform: scale(1.02);
+}
+.data-card:hover .h3-text {
+  color: #FFFFFF;
+  border-bottom-color: #A754C4;
+}
+.data-card:hover .h4-text {
+  opacity: 1;
+  transform: none;
+}
+.data-card:hover .link-text {
+  color: #FFFFFF;
+}
+.data-card:hover .link-text svg {
+  -webkit-animation: point 1.25s infinite alternate;
+          animation: point 1.25s infinite alternate;
+}
+.data-card:hover .link-text svg path {
+  fill: #FFFFFF;
 }
 
-.basic-card .card-link a:hover:after {
-  width: 100%;
-  left: 0;
+@-webkit-keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0.125em);
+  }
 }
 
-.basic-card-aqua {
-  background-image: linear-gradient(to bottom right, #610c63, #4c3575);
-}
-
-.basic-card-aqua .card-content,
-.basic-card .card-link a {
-  color: #fff;
-}
-
-.basic-card-aqua .card-link {
-  border-top: 1px solid #610c63;
-}
-
-.basic-card-aqua .card-link a:after {
-  background: #fff;
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0.125em);
+  }
 }

@@ -4,7 +4,7 @@ import Card from './Card';
 
 const Welcome = () => {
   return (
-    <div>
+    <div className='welcomepage-allign'>
         <div id='card'>
         <Card/>
         </div>

@@ -5,7 +5,7 @@ function logincard() {
   return (
     <div class="login-box">
       <div class="card-heading">
-      <h2>Login with your Email id & Password</h2>
+      <h2>Login</h2>
       </div>
       <form>
         <div class="user-box">
@@ -20,13 +20,15 @@ function logincard() {
         <div class="user-box">
           <input type="text" name="" required placeholder="Password" />
         </div>
+        <div className="login-btn">
           <button>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          Submit
+          Sign in
           </button>
+        </div>
       </form>
     </div>
   );

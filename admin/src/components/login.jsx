@@ -11,7 +11,7 @@ function Login() {
             <div className='login-heading'>
               {/* <h1>Welcome to Our Login Page</h1> */}
             </div>
-            <div className='card'>
+            <div className='login-card-container'>
               <Logincard/>
             </div>
           </div>
