@@ -1,6 +1,6 @@
 import React from 'react'
 import './Welcome.css';
-import Card from './Card';
+import Card from '../components/BasicCard/Card';
 
 const Welcome = () => {
   return (

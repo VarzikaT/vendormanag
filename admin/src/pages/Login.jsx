@@ -1,7 +1,6 @@
 import React from 'react'
-import login from '../img/login.jpg';
 import './Login.css';
-import Logincard from '../components/Logincard';
+import Logincard from '../components/LoginCard/Logincard';
 
 function Login() {
   return (

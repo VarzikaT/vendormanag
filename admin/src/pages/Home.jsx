@@ -1,5 +1,7 @@
+
 import React from "react";
 import "./Home.css";
+import Modal from "../components/Modal/Modal";
 
 function Home() {
   return (
@@ -47,6 +49,9 @@ function Home() {
             </span>
           </ul>
         </nav>
+        <div className="home-modal">
+          <Modal/>
+        </div>
       </div>
   );
 }

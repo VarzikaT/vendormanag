@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
 
+
 :root{
 	--black: #5A5566;
 	--light-purple: #CBBFE6;
@@ -11,13 +12,14 @@
 }
 
 .changes{
-    background-color: #816797;
+    background-color: #c990cfef;
     height: 100vh;
     width: 100vw;
 }
 .navbar{
     /* background-color: #443666; */
-
+    display: flex;
+    flex-direction: column;
 }
 html,body, p, ul{
 	margin: 0;
@@ -36,8 +38,10 @@ ul{
     align-items: center;
 }
 
+/* yaaar tag pe aise color nhi lgate */
 p{
 	cursor: pointer;
+	color : var(--purple)
 }
 
 .menu-option, #sign-in, #sign-up{
@@ -53,16 +57,17 @@ p{
 	top: 100%;
 	width: 0;
 	height: 2px;
-	background-color: white;
+	background-color: var(--dark-purple);
 	transition: width 0.2s ease-in-out;
 }
 
 .menu-option:hover, #sign-in:hover, #sign-up:hover{
-	color: white;
+	color:var(--dark-purple);
 }
 
 .menu-option:hover{
-	text-shadow: 1px 0px 3px black;
+	/* text-shadow: 1px 0px 3px black; */
+	color: var(--purple);
 }
 
 .menu-option:hover:after{
@@ -100,7 +105,7 @@ p{
 }
 
 #sign-in, #sign-up{
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--purple);
 	padding: 5px 10px;
 	transition: 0.2s;
@@ -108,16 +113,16 @@ p{
 }
 
 #sign-in:hover, #sign-up:hover{
-	background-color: var(--purple);
+	background-color: #c990cfef;
 }
 
 #navbar{
 	height: 100px;
-    background-color: #443666;
+    /* background-color: #443666; */
 }
 
 .menu{
-	background-color: var(--light-purple);
+	background-color: #ffffff;
 }
 
 #sign-up{
@@ -133,7 +138,7 @@ p{
 	position: absolute;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--black);
+    background-color: #c87cd0;
     padding: 10px 5px;
     text-shadow: none;
     cursor: pointer;
@@ -141,13 +146,13 @@ p{
 }
 
 #products li{
-	color: gainsboro;
+	color: rgb(0, 0, 0);
 	padding: 5px 0;
 	transition: color 0.3s;
 }
 
 #products li:hover{
-	color: white;
+	color: rgb(156, 150, 150);
 }
 
 #responsive-menu .menu li:nth-of-type(2):hover #products{
