@@ -1,5 +1,7 @@
 import React from "react";
 import "./Modal.css";
+import Form from "./Form";
+import { Link } from "react-router-dom";
 
 function Modal() {
   return (
@@ -7,8 +9,9 @@ function Modal() {
       <div class="modal-container">
         <div class="interior">
           <a class="modal-btn" href="#open-modal">
-            👋 Basic CSS-Only Modal
+            Register Vendor!!!
           </a>
+          <br />
         </div>
       </div>
       <div id="open-modal" class="modal-window">
@@ -16,13 +19,14 @@ function Modal() {
           <a href="" title="Close" class="modal-close">
             Close
           </a>
-          <h1>Voilà!</h1>
           <div>
-            A CSS-only modal based on the :target pseudo-class. Hope you find it
-            helpful.
+            <Form />
           </div>
           <br />
-          Your new favorite eyedropper tool!
+          
+            <div className="modal-btn-container">
+              <button className="modal-submit-btn" onClick={() => window.location.href = "/home"} >Submit</button>
+            </div>
         </div>
       </div>
     </>

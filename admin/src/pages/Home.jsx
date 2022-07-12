@@ -2,6 +2,7 @@
 import React from "react";
 import "./Home.css";
 import Modal from "../components/Modal/Modal";
+import {Link} from "react-router-dom";
 
 function Home() {
   return (
@@ -42,9 +43,11 @@ function Home() {
                 <li id="sign-in">
                   <p>Other User</p>
                 </li>
+                <Link to="/">
                 <li id="sign-up">
                   <p>Log out</p>
                 </li>
+                </Link>
               </ul>
             </span>
           </ul>

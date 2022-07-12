@@ -1,12 +1,13 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 function Card() {
   return (
-   
-      <div class="data-card">
-        <h3 className="h3-text">Admin Portal</h3>
-        <h4 className="h4-text">Welcome to the portal</h4>
+    <div class="data-card">
+      <h3 className="h3-text">Admin Portal</h3>
+      <h4 className="h4-text">Welcome to the portal</h4>
+      <Link to="/login" >
         <span class="link-text">
           Click to Login
           <svg
@@ -24,8 +25,8 @@ function Card() {
             />
           </svg>
         </span>
-      </div>
-   
+      </Link>
+    </div>
   );
 }
 

@@ -26,6 +26,10 @@
   background: white;
 }
 
+.modal-window{
+  background-color: rgba(0, 0, 0, 0.677);
+}
+
 .modal-close {
   color: #aaa;
   line-height: 50px;
@@ -69,9 +73,22 @@
   display: block;
 }
 
+.modal-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
 .modal-btn {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   padding: 1em 1.5em;
   border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.modal-submit-btn {
+  background-color: rgb(226, 178, 236);
+  padding: 10px 25px;
+  border-radius: 0.5rem;
+  border-style: none;
   text-decoration: none;
 }
